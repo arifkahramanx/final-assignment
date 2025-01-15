@@ -1,0 +1,1 @@
+document.getElementById('animateButton').addEventListener('click',function(){const box=document.getElementById('animatedBox');let position=0;let direction=1;const animation=setInterval(()=>{position+=5*direction;box.style.transform=`translateX(${position}px)`;if(position>=100||position<=0){direction*=-1;}},50);});
